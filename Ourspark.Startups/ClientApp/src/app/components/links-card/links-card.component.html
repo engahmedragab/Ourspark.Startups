@@ -1,0 +1,8 @@
+<ng-container *ngIf="Links && Links.length > 0">
+    <ng-container *ngFor="let link of Links">
+        <div>
+            <i> {{link.id}} </i>
+            <p> {{link.name}} ! </p>
+        </div>
+    </ng-container>
+</ng-container>

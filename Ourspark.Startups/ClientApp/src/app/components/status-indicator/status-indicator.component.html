@@ -1,0 +1,13 @@
+<p>ourspark-status-indicator works!</p>
+<ng-container *ngIf="ControlMode == EnumControlMode.None">
+    <p>No Thing to Show!</p>
+</ng-container>
+<ng-container *ngIf="ControlMode != EnumControlMode.InProgress">
+    <p>Loading...!</p>
+</ng-container>
+<ng-container *ngIf="ControlMode != EnumControlMode.Warning">
+    <p>Warning!</p>
+</ng-container>
+<ng-container *ngIf="ControlMode != EnumControlMode.Error">
+    <p>Error!</p>
+</ng-container>

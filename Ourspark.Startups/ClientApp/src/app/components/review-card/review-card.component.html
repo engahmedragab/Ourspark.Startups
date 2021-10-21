@@ -1,0 +1,13 @@
+<ng-container *ngIf="Reviews && Reviews.length > 0">
+   <div *ngFor="let review of Reviews">
+        <mat-card class="example-card">
+            <mat-card-subtitle>{{review.date | date}}</mat-card-subtitle>
+            <mat-card-title><a [routerLink]="['/','startup']" [queryParams]=" { id : review.reviewerId.id } "> {{review.reviewerId.name}} </a></mat-card-title>
+            <mat-card-content>
+                <ourspark-rate-indicator [Rate]="review.rate" ></ourspark-rate-indicator>
+                <p>{{ review.comment }}</p>
+            </mat-card-content>
+            <ourspark-review-card [Reviews]="review.reviews" ></ourspark-review-card>
+        </mat-card>
+   </div>
+</ng-container>

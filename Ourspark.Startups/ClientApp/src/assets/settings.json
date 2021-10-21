@@ -1,0 +1,32 @@
+{
+  "clientRoot": "http://localhost:4200/",
+  "apiUrl": "https://localhost:5001",
+  "stsAuthority": "https://localhost:5001/",
+  "pageSize": 10,
+  "textboxMaxLength": 200,
+  "groupTextboxMaxLength":50,
+  "textareaMaxLength": 800,
+  "kpiImportMaxAllowedKpis": "10",
+  "kpiImportTemplatePath": "assets/Templates/KPIImportTemplate_1.xlsx",
+  "ppmConfig": true,
+  "dateFormat": "yyyy-MM-dd",
+  "yearRange": "1900:2100",
+  "maxStrategyCycleYear": 50,
+  "initiativeStatusThreshold": {
+    "threshold1": 15,
+    "threshold2": 5
+  },
+  "attachmentAllowFiles": "gif,jpg,jpeg,png,bmp,pdf,doc,docx,dot,dotx,xls,xlsx,xlt,xltx,ppt,pptx,pot,potx,pps,ppsx,pub",
+  "NumberAttachmentAllowFiles": 3,
+  "SizeAttachmentAllowFile": 5242880,
+  "textboxForLevelMaxLength": 50,
+  "textboxCostMaxLength": 12,
+  "NumberOfObjectiveAttachmentAllowFiles": "20",
+  "NumberOfKPIAttachmentAllowFiles": "3",
+  "NumberOfInitiativeAttachmentAllowFiles": "3",
+  "NumberOfTaskAttachmentAllowFiles": "5",
+  "NumberOfLPIActualAttachmentAllowFiles": "3",
+  "KpiCodeMinLength": 4,
+  "KpiCodeMaxLength": 6,
+  "KpiUnitNameMaxLength": 10
+}

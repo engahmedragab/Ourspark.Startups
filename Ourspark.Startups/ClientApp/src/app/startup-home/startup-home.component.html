@@ -1,0 +1,6 @@
+<ng-container *ngIf="ControlMode == EnumControlMode.Load">
+    <ourspark-startup-card [Startup]="StartupDetails.startup"></ourspark-startup-card>
+    <ourspark-review-card [Reviews]="StartupDetails.startupReviews"></ourspark-review-card>
+    <ourspark-links-card [Links]="StartupDetails.startup"></ourspark-links-card>
+</ng-container>
+<ourspark-status-indicator></ourspark-status-indicator>
